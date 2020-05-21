@@ -49,9 +49,9 @@ export const SearchParams = () => {
         </label>
         <AnimalDropdown />
         <BreedDropdown />
-        <Results pets={pets} />
         <button>Submit</button>
       </form>
+      <Results pets={pets} />
     </div>
   );
 };
