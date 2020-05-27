@@ -4,6 +4,8 @@ import useDropdown from "./useDropdown";
 import Results from "./Results";
 
 export const SearchParams = () => {
+
+
   const [location, setLocation] = useState("Seattle, WA");
   const [breeds, setBreeds] = useState([]);
   const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS);
@@ -30,7 +32,7 @@ export const SearchParams = () => {
     }, console.error);
   }, [animal, setBreed, setBreeds]);
 
-  return (
+  return ( 
     <div className="search-params">
       <form
         onSubmit={(e) => {
